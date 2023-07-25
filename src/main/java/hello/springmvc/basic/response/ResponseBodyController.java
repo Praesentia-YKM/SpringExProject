@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Slf4j
-@Controller
-//@RestController
+//@Controller
+//@ResponseBody
+@RestController
 public class ResponseBodyController {
 
     @GetMapping("/response-body-string-v1")
@@ -45,7 +46,6 @@ public class ResponseBodyController {
         return new ResponseEntity<>("ok", HttpStatus.OK);
     }
 
-    @ResponseBody
     @GetMapping("/response-body-string-v3")
     public String responseBodyV3() {
         return "ok";
