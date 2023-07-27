@@ -62,6 +62,7 @@ public class ResponseBodyController {
     /**
      * @ResponseBody를 하면 ResponseEntity와 다르게 status상태값을 보낼 수 없어서 
      * @ResponseStatus라는 어노테이션을 지원
+     * 개념추가
      * @return
      */
     @ResponseStatus(HttpStatus.OK)
